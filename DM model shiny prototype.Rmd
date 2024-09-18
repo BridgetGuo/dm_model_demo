@@ -31,16 +31,16 @@ library(Rdice)
 load data
 ```{r}
 # load stem density data (stratified by species and crown class) for regenerated and mature plots
-regen_density_sum <- read.csv("~/R/model_prototype/generated data/stem density proto2/regen stem density canopy class.csv") %>% setDT()
+regen_density_sum <- read.csv("regen stem density canopy class.csv") %>% setDT()
 
-mature_density_sum <- read.csv("~/R/model_prototype/generated data/stem density proto2/mature stem density canopy class.csv") %>% setDT()
+mature_density_sum <- read.csv("mature stem density canopy class.csv") %>% setDT()
 
 # load Variable retention shapefile
-regen_base <- vect("~/R/model_prototype/RESULTS geodata/selected variable retention cutblocks.shp")
+regen_base <- vect("selected variable retention cutblocks.shp")
 
 # load fitted models
-load("~/R/model_prototype/rough R codes/prototype 3/fitted models/thomas_model.rda")
-load("~/R/model_prototype/rough R codes/prototype 3/fitted models/olr_model.rda")
+load("thomas_model.rda")
+load("olr_model.rda")
 
 ```
 
